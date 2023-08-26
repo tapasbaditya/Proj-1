@@ -12,4 +12,32 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClkHome() {
+    var ele = document.getElementById('home') as HTMLElement
+    ele.classList.add('menu-highlight')
+  }
+
+  onClkProducts() {
+    var ele = document.getElementById('product') as HTMLElement
+    ele.classList.add('menu-highlight')
+
+  }
+
+  onClkOrders() {
+    var ele = document.getElementById('orders') as HTMLElement
+    ele.classList.add('menu-highlight')
+  }
+
+  onClkManage() {
+    var ele = document.getElementById('manage') as HTMLElement
+    ele.classList.add('menu-highlight')
+
+  }
+
+  onClkAccount() {
+    var ele = document.getElementById('account') as HTMLElement
+    ele.classList.add('menu-highlight')
+
+  }
+
 }

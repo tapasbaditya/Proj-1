@@ -1,7 +1,7 @@
 <div class="nav-bar">
-    <div class="menu" routerLink="/">Home</div>
-    <div class="menu" routerLink="/orders">Orders</div>
-    <div class="menu" routerLink="/products">Products</div>
-    <div class="menu" routerLink="/manage">Manage</div>
-    <div class="menu"routerLink="/account">Account</div>
+    <div id="home" class="menu" (click)="onClkHome()" routerLink="/">Home</div>
+    <div id="orders" class="menu" (click)="onClkOrders()" routerLink="/orders">Orders</div>
+    <div id="product" class="menu" (click)="onClkProducts()" routerLink="/products">Products</div>
+    <div id="manage" class="menu" (click)="onClkManage()" routerLink="/manage">Manage</div>
+    <div id="account" class="menu" (click)="onClkAccount()" routerLink="/account">Account</div>
 </div>

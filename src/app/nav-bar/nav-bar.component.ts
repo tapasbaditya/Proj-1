@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  menu: number = 1
+
   constructor() { }
 
   ngOnInit(): void {
@@ -59,13 +61,13 @@ export class NavBarComponent implements OnInit {
   //   ele5.classList.add('menu-highlight')
   // }
 
-  onClkMenubar(menuid: string){
-    var x = document.getElementsByClassName('menu') as HTMLCollection
-    for(var i = 0; i < x.length; i++){
-      x[i].classList.remove('menu-highlight');
-    }
-    var ele = document.getElementById(menuid) as HTMLElement
-    ele.classList.add('menu-highlight')
-  }
+  // onClkMenubar(menuid: string) {
+  //   var x = document.getElementsByClassName('menu') as HTMLCollection
+  //   for (var i = 0; i < x.length; i++) {
+  //     x[i].classList.remove('menu-highlight');
+  //   }
+  //   var ele = document.getElementById(menuid) as HTMLElement
+  //   ele.classList.add('menu-highlight')
+  // }
 
 }

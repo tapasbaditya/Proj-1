@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  x = 'hi'
+
+  print() {
+    alert(this.x)
+  }
+
   constructor() { }
 
   ngOnInit(): void {

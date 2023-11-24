@@ -6,19 +6,20 @@
     top: 0;
     width: 100%;
     display: inline-flex;
+    z-index: 10;
     .menu {
         color: white;
         display: flex;
         align-items: center;
         cursor: pointer;
         transition: 0.2s;
-        padding: 20px;
+        padding: 1rem;
         &:hover {
             background-color: #000000;
         }
     }
     .menu-active {
-        background-color: #04aa6d !important;
+        background-color: var(--primary) !important;
     }
     
 }

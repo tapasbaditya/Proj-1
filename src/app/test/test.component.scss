@@ -1,0 +1,21 @@
+
+.tb {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    th {
+        text-transform: uppercase;
+        background-color: #eeeeee;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+    tr {
+        &:hover {
+            background-color: #efefef;
+        }
+    }
+}

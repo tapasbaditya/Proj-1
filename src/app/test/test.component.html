@@ -1,0 +1,32 @@
+<input type="number" class="md-input" placeholder="Enter Pincode" [(ngModel)]="pincode">
+<!-- <select class="md-input" [(ngModel)]="pincode" (change)="getAddressByPincode()">
+    <option *ngFor="let p of arrPincodes" [value]="p">{{p}}</option>
+</select> -->
+
+<button class="md-btn" style="margin-left: 0.4rem;" (click)="getAddressByPincode()">Get</button>
+
+<div *ngIf="msg != ''" class="md-msg-success">
+    {{msg}}
+</div>
+
+<table *ngIf="arrAddress" class="tb" style="margin-top: 0.5rem;">
+    <tr>
+        <!-- <th>Sl no</th> -->
+        <th>Name</th>
+        <th>BranchType</th>
+        <th>pincode</th>
+        <th>State</th>
+
+    </tr>
+    <tr *ngFor="let dat of arrAddress; ">
+        <!-- <td>{{i+1}}</td> -->
+        <td>{{dat.Name}}</td>
+        <td>{{dat.BranchType}}</td>
+        <td>{{dat.Pincode}}</td>
+        <td>{{dat.State}}</td>      
+    </tr>
+
+</table>
+
+
+<!-- <input class="md-input" [(ngModel)]="str" (keyup)="getValue()"> -->

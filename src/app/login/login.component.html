@@ -1,0 +1,43 @@
+<div class="login-container row">
+    <div class="col-md-6 d-none d-sm-block d-sm-none d-md-block left-block">
+        <h1>Mo Dokan</h1>
+        <div class="caption">
+            Create Your Digital Dokan
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-12">
+        <div class="login-box">
+            <div class="login">
+                <h1>Login Account</h1>
+                <div>
+                    <input type="text" class="md-input" placeholder="Email ID" [(ngModel)]="user.userId"
+                        (blur)="user.userId = user.userId.trim() ">
+                </div>
+                <div *ngIf="isSubmit && user.userId==''" class="field-error">User Id is required</div>
+                <div *ngIf="isSubmit && user.userId!='' && userIdMsg!=''" class="field-error">{{userIdMsg}}</div>
+
+                <br>
+                <div>
+                    <input type="password" class="md-input" placeholder="Password" [(ngModel)]="user.password"
+                        (blur)="user.password = user.password.trim()">
+                </div>
+                <div *ngIf="isSubmit && user.password==''" class="field-error">Password is required</div>
+                <div *ngIf="isSubmit && user.password!='' && passwordMsg !=''" class="field-error">
+                    {{passwordMsg}}
+                </div>
+
+                <br>
+                <div style="color: red;">{{errorMsg}}</div>
+                <div>
+                    <button class="md-btn" (click)="login()">LOGIN</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+<h1>Login Account</h1>
+
+    <input type="string" class="md-input" placeholder="Enter Email Id" > -->
